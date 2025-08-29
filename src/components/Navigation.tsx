@@ -53,39 +53,6 @@ const Navigation = () => {
               )
             )}
           </div>
-
-          {/* Right side buttons */}
-          <div className="flex items-center space-x-4">
-            {/* Theme Toggle */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="w-9 h-9 p-0"
-            >
-              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-
-            {/* CTA Button */}
-            <Button 
-              className="hidden sm:inline-flex btn-glow bg-primary text-primary-foreground"
-              size="sm"
-            >
-              Start Learning
-            </Button>
-
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost" 
-              size="sm"
-              className="md:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </Button>
-          </div>
         </div>
 
         {/* Mobile Navigation */}
