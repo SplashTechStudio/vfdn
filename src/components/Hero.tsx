@@ -15,7 +15,7 @@ const Hero = () => {
       >
         <source src={tradingVideo} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="absolute inset-0 bg-black/70" />
       
       {/* Animated Elements */}
       <div className="absolute inset-0 hero-chart-animation" />
@@ -25,10 +25,10 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-heading font-bold text-gradient-premium mb-4">
+            <h1 className="text-6xl md:text-8xl font-heading font-bold text-primary mb-4">
               VFDN
             </h1>
-            <div className="w-32 h-1 bg-gradient-premium mx-auto rounded-full" />
+            <div className="w-32 h-1 bg-primary mx-auto rounded-full" />
           </div>
           
           {/* Main Tagline */}
@@ -37,7 +37,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-white/90 mb-4 font-medium">
-            Master the Art of Trading with <span className="text-gradient-premium">Persistence, Focus & Ambition</span>
+            Master the Art of Trading with <span className="text-secondary font-bold">Persistence, Focus & Ambition</span>
           </p>
           
           <p className="text-base md:text-lg text-white/80 mb-12 max-w-2xl mx-auto">

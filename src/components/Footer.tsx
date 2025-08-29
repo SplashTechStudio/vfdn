@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="text-3xl font-heading font-bold text-gradient-premium">
+              <div className="text-3xl font-heading font-bold text-primary">
                 VFDN
               </div>
             </div>
@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="mb-6">
               <a 
                 href="#" 
-                className="inline-flex items-center bg-gradient-primary text-primary-foreground px-4 py-2 rounded-lg hover:shadow-glow transition-all duration-200"
+                className="inline-flex items-center bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-all duration-200"
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Join Telegram

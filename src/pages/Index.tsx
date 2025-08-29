@@ -5,6 +5,7 @@ import Courses from "@/components/Courses";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <FloatingButtons />
     </div>
   );
 };
