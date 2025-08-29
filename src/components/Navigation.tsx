@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/components/ThemeProvider";
 
 const Navigation = () => {  
   const [isOpen, setIsOpen] = useState(false);

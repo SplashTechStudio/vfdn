@@ -7,51 +7,51 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 220 15% 15%;
+    /* Core Brand Colors - VFDN */
+    --background: 0 0% 100%; /* White #FFFFFF */
+    --foreground: 208 76% 16%; /* Deep Blue #0A2540 */
     
     /* VFDN Brand Palette */
-    --primary: 210 100% 50%; /* Professional blue */
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 100% 60%;
+    --primary: 208 76% 16%; /* Deep Blue #0A2540 */
+    --primary-foreground: 0 0% 100%; /* White */
+    --primary-glow: 158 100% 33%; /* Emerald Green #00A86B */
     
-    --secondary: 220 15% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 158 100% 33%; /* Emerald Green #00A86B */
+    --secondary-foreground: 0 0% 100%; /* White */
     
     /* Trading Colors */
-    --profit: 142 71% 45%; /* Trading green */
+    --profit: 158 100% 33%; /* Emerald Green #00A86B */
     --profit-foreground: 0 0% 100%;
     --loss: 0 84% 55%; /* Trading red */
     --loss-foreground: 0 0% 100%;
-    --gold: 45 100% 50%; /* Premium gold */
-    --gold-foreground: 220 15% 15%;
+    --gold: 51 100% 50%; /* Golden Yellow #FFD700 */
+    --gold-foreground: 208 76% 16%; /* Deep Blue */
     
     /* Neutral Palette */
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 10% 50%;
-    --accent: 220 15% 96%;
-    --accent-foreground: 220 15% 15%;
+    --muted: 220 20% 97%; /* Light Gray #F5F7FA */
+    --muted-foreground: 0 0% 18%; /* Charcoal Gray #2E2E2E */
+    --accent: 51 100% 50%; /* Golden Yellow #FFD700 */
+    --accent-foreground: 208 76% 16%; /* Deep Blue */
     
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 208 76% 16%; /* Deep Blue */
     
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 208 76% 16%; /* Deep Blue */
     
     --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 210 100% 50%;
+    --border: 220 20% 90%; /* Light border */
+    --input: 220 20% 90%; /* Light input background */
+    --ring: 208 76% 16%; /* Deep Blue ring */
     --radius: 0.75rem;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-trading: linear-gradient(135deg, hsl(var(--profit)), hsl(var(--primary)));
+    /* Gradients - VFDN Brand */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-trading: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--gold)));
     --gradient-premium: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--primary)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary) / 0.9), hsl(var(--primary) / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--secondary) / 0.8));
     
     /* Shadows & Effects */
     --shadow-glow: 0 0 30px hsl(var(--primary) / 0.2);
@@ -73,41 +73,41 @@
   }
 
   .dark {
-    /* Dark Mode Colors */
-    --background: 220 20% 8%;
-    --foreground: 0 0% 95%;
+    /* Dark Mode Colors - VFDN */
+    --background: 0 0% 18%; /* Charcoal Gray #2E2E2E */
+    --foreground: 0 0% 100%; /* White */
     
-    --primary: 210 100% 60%;
-    --primary-foreground: 220 20% 8%;
-    --primary-glow: 210 100% 70%;
+    --primary: 158 100% 33%; /* Emerald Green #00A86B */
+    --primary-foreground: 0 0% 100%; /* White */
+    --primary-glow: 51 100% 50%; /* Golden Yellow #FFD700 */
     
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 208 76% 16%; /* Deep Blue #0A2540 */
+    --secondary-foreground: 0 0% 100%; /* White */
     
-    --profit: 142 71% 50%;
-    --profit-foreground: 220 20% 8%;
+    --profit: 158 100% 33%; /* Emerald Green #00A86B */
+    --profit-foreground: 0 0% 100%;
     --loss: 0 84% 60%;
-    --loss-foreground: 220 20% 8%;
-    --gold: 45 100% 55%;
-    --gold-foreground: 220 20% 8%;
+    --loss-foreground: 0 0% 100%;
+    --gold: 51 100% 50%; /* Golden Yellow #FFD700 */
+    --gold-foreground: 0 0% 18%; /* Charcoal Gray */
     
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 70%;
-    --accent: 220 15% 15%;
-    --accent-foreground: 0 0% 95%;
+    --muted: 0 0% 25%; /* Darker charcoal */
+    --muted-foreground: 0 0% 80%; /* Light gray */
+    --accent: 51 100% 50%; /* Golden Yellow #FFD700 */
+    --accent-foreground: 0 0% 18%; /* Charcoal Gray */
     
-    --card: 220 20% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 25%; /* Dark charcoal */
+    --card-foreground: 0 0% 100%; /* White */
     
-    --popover: 220 20% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 25%; /* Dark charcoal */
+    --popover-foreground: 0 0% 100%; /* White */
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 220 20% 8%;
+    --destructive-foreground: 0 0% 100%;
     
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 210 100% 60%;
+    --border: 0 0% 35%; /* Lighter charcoal border */
+    --input: 0 0% 35%; /* Lighter charcoal input */
+    --ring: 158 100% 33%; /* Emerald Green ring */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

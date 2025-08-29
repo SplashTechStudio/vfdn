@@ -1,17 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Users, Star } from "lucide-react";
-import forexHeroBg from "@/assets/forex-hero-bg.jpg";
+import tradingVideo from "@/assets/trading-hero-video.mp4";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${forexHeroBg})` }}
+      {/* Background Video with Overlay */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
       >
-        <div className="absolute inset-0 bg-gradient-hero" />
-      </div>
+        <source src={tradingVideo} type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-hero" />
       
       {/* Animated Elements */}
       <div className="absolute inset-0 hero-chart-animation" />
@@ -62,8 +66,9 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              variant="accent"
               size="lg" 
-              className="btn-glow bg-gradient-premium text-gold-foreground hover:shadow-premium px-8 py-4 text-lg font-semibold group"
+              className="btn-glow px-8 py-4 text-lg font-semibold group"
             >
               Join Upcoming Cohort
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -71,7 +76,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 px-8 py-4 text-lg backdrop-blur-md"
+              className="px-8 py-4 text-lg backdrop-blur-md"
             >
               Watch Free Training
             </Button>
