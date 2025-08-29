@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className=" text-white">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
@@ -34,7 +34,7 @@ const Footer = () => {
                 VFDN
               </div>
             </div>
-            <p className="text-secondary-foreground/80 mb-6 leading-relaxed">
+            <p className="text-white/80 mb-6 leading-relaxed">
               Vanguard Forex Drive Network - Empowering traders with persistence, 
               focus, and ambition to achieve financial freedom through professional 
               forex education.
@@ -63,7 +63,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-secondary-foreground/80 hover:text-primary transition-colors duration-200"
+                    className="text-white/80 hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={program.href}
-                    className="text-secondary-foreground/80 hover:text-primary transition-colors duration-200"
+                    className="text-white/80 hover:text-primary transition-colors duration-200"
                   >
                     {program.name}
                   </a>
@@ -102,8 +102,8 @@ const Footer = () => {
               </a>
             </div>
             <div className="mb-6">
-              <p className="text-sm text-secondary-foreground/60 mb-2">Follow @goodhazefx</p>
-              <p className="text-sm text-secondary-foreground/80">Personal Trading Account: GHFX</p>
+              <p className="text-sm text-white/60 mb-2">Follow @goodhazefx</p>
+              <p className="text-sm text-white/80">Personal Trading Account: GHFX</p>
             </div>
             <h5 className="font-semibold mb-3">Legal</h5>
             <ul className="space-y-2">
@@ -111,7 +111,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={item.href}
-                    className="text-sm text-secondary-foreground/60 hover:text-primary transition-colors duration-200"
+                    className="text-sm text-white/60 hover:text-primary transition-colors duration-200"
                   >
                     {item.name}
                   </a>
@@ -122,10 +122,10 @@ const Footer = () => {
         </div>
 
         {/* Risk Disclaimer */}
-        <div className="border-t border-secondary-foreground/20 pt-8 mb-8">
+        <div className="border-t border-white/20 pt-8 mb-8">
           <div className="bg-loss/10 border border-loss/20 rounded-lg p-4">
             <h5 className="font-semibold text-loss mb-2">Risk Disclaimer</h5>
-            <p className="text-sm text-secondary-foreground/80 leading-relaxed">
+            <p className="text-sm text-white/80 leading-relaxed">
               Forex trading involves substantial risk of loss and is not suitable for all investors. 
               Past performance is not indicative of future results. VFDN provides educational services 
               only and does not provide investment advice. Trading decisions are the sole responsibility 
@@ -135,15 +135,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-secondary-foreground/20 pt-8">
+        <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-sm text-secondary-foreground/60 mb-4 md:mb-0">
+            <div className="text-sm text-white/60 mb-4 md:mb-0">
               © 2024 Vanguard Forex Drive Network (VFDN). Operating under Regeemoni Ltd. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <span className="text-secondary-foreground/60">Regulated & Licensed</span>
-              <span className="text-secondary-foreground/60">•</span>
-              <span className="text-secondary-foreground/60">Nigeria Financial Intelligence Unit Compliant</span>
+              <span className="text-white/60">Regulated & Licensed</span>
+              <span className="text-white/60">•</span>
+              <span className="text-white/60">Nigeria Financial Intelligence Unit Compliant</span>
             </div>
           </div>
         </div>

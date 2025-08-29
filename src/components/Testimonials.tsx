@@ -147,7 +147,7 @@ const Testimonials = () => {
               Join hundreds of successful traders who started their journey with VFDN.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="btn-glow bg-gradient-premium text-gold-foreground hover:shadow-premium">
+              <Button className="btn-glow bg-primary text-gold-foreground hover:bg-primary/70 hover:shadow-premium">
                 Start Your Journey Today
               </Button>
               <Button variant="outline" className="border-gold/30 text-gold hover:bg-gold/10">

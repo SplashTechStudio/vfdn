@@ -184,7 +184,7 @@ const Contact = () => {
               Secure your spot today and transform your financial future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="btn-glow bg-gradient-premium text-gold-foreground hover:shadow-premium">
+              <Button className="btn-glow bg-primary hover:bg-primary/75 hover:border hover:border-primary text-gold-foreground ">
                 Reserve Your Spot Now
               </Button>
               <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
