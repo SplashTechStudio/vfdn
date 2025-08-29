@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-white/60 mb-4 md:mb-0">
-              © 2024 Vanguard Forex Drive Network (VFDN). Operating under Regeemoni Ltd. All rights reserved.
+              © 2025 Vanguard Forex Drive Network (VFDN). Operating under Regeemoni Ltd. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <span className="text-white/60">Regulated & Licensed</span>
