@@ -28,7 +28,7 @@ const FloatingButtons = () => {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent("Hello! I'm interested in learning more about VFDN's forex trading courses.");
-    const phoneNumber = "2348031234567"; // Replace with actual WhatsApp number
+    const phoneNumber = "+2349030487676"; // Replace with actual WhatsApp number
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 

@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   const programs = [
-    { name: "Free Telegram Community", href: "#courses" },
+    { name: "Free Telegram Community", href: "https://t.me/ghfxanalysis" },
     { name: "3-Week Intensive Training", href: "#courses" }, 
     { name: "Elite Mentorship Program", href: "#courses" },
     { name: "Portfolio Management", href: "#contact" }
