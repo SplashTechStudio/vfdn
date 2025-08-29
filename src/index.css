@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* VFDN Forex Academy Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
+    /* Core Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 220 15% 15%;
+    
+    /* VFDN Brand Palette */
+    --primary: 210 100% 50%; /* Professional blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 100% 60%;
+    
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Trading Colors */
+    --profit: 142 71% 45%; /* Trading green */
+    --profit-foreground: 0 0% 100%;
+    --loss: 0 84% 55%; /* Trading red */
+    --loss-foreground: 0 0% 100%;
+    --gold: 45 100% 50%; /* Premium gold */
+    --gold-foreground: 220 15% 15%;
+    
+    /* Neutral Palette */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 50%;
+    --accent: 220 15% 96%;
+    --accent-foreground: 220 15% 15%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 220 15% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 220 15% 15%;
+    
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 210 100% 50%;
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-trading: linear-gradient(135deg, hsl(var(--profit)), hsl(var(--primary)));
+    --gradient-premium: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--primary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary) / 0.9), hsl(var(--primary) / 0.8));
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.2);
+    --shadow-premium: 0 10px 40px hsl(var(--gold) / 0.3);
+    --shadow-trading: 0 5px 20px hsl(var(--profit) / 0.2);
+    
+    /* Typography Scale */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +80,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Dark Mode Colors */
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
+    
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 20% 8%;
+    --primary-glow: 210 100% 70%;
+    
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 95%;
+    
+    --profit: 142 71% 50%;
+    --profit-foreground: 220 20% 8%;
+    --loss: 0 84% 60%;
+    --loss-foreground: 220 20% 8%;
+    --gold: 45 100% 55%;
+    --gold-foreground: 220 20% 8%;
+    
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 70%;
+    --accent: 220 15% 15%;
+    --accent-foreground: 0 0% 95%;
+    
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 20% 8%;
+    
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 210 100% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +132,99 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+@layer components {
+  /* Hero Section Animations */
+  .hero-chart-animation {
+    @apply relative overflow-hidden;
+  }
+  
+  .hero-chart-animation::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent;
+    animation: shimmer 3s infinite;
+    transform: translateX(-100%);
+  }
+  
+  /* Trading Card Variants */
+  .trading-card {
+    @apply relative p-6 rounded-2xl border border-border/50 backdrop-blur-sm;
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.05);
+  }
+  
+  .trading-card-premium {
+    @apply trading-card border-gold/30;
+    background: linear-gradient(145deg, hsl(var(--gold) / 0.05), hsl(var(--card)));
+    box-shadow: var(--shadow-premium);
+  }
+  
+  /* Button Hover Effects */
+  .btn-glow {
+    @apply relative overflow-hidden;
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500;
+    transform: translateX(-100%);
+  }
+  
+  .btn-glow:hover::before {
+    @apply opacity-100;
+    animation: shine 0.8s ease-out;
+  }
+}
+
+@layer utilities {
+  /* Text Gradients */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-gradient-trading {
+    background: var(--gradient-trading);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-gradient-premium {
+    background: var(--gradient-premium);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 20px hsl(var(--primary) / 0.6); }
 }
