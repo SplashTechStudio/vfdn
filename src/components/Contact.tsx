@@ -21,13 +21,13 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6 text-gold" />,
       title: "Email Us",
-      details: ["info@vfdn.academy", "support@vfdn.academy"],
+      details: ["info@vfdn.academy"],
       action: "Send Email"
     },
     {
       icon: <Phone className="w-6 h-6 text-secondary" />,
       title: "Call Us",
-      details: ["+234 (0) 803 123 4567", "Mon-Fri: 9AM-6PM WAT"],
+      details: ["+234 (0) 815 144 4423", "Mon-Fri: 9AM-6PM WAT"],
       action: "Call Now"
     }
   ];

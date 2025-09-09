@@ -21,8 +21,8 @@ const About = () => {
 
   const stats = [
     { label: "Years of Experience", value: "10+" },
-    { label: "Students Mentored", value: "500+" },
-    { label: "Success Stories", value: "300+" },
+    { label: "Students Mentored", value: "200+" },
+    { label: "Success Stories", value: "200+" },
     { label: "Countries Reached", value: "15+" }
   ];
 

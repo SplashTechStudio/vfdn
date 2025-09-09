@@ -26,8 +26,8 @@ const Courses = () => {
     {
       id: "intensive",
       title: "3-Week Intensive Training",
-      price: "$1,000",
-      duration: "3 Weeks",
+      price: "300",
+      duration: "6 Weeks",
       description: "Comprehensive forex trading bootcamp covering everything from basics to advanced strategies.",
       features: [
         "Complete trading curriculum",
@@ -49,7 +49,7 @@ const Courses = () => {
     {
       id: "mentorship",
       title: "Elite Mentorship Program",
-      price: "$5,000",
+      price: "$700",
       duration: "6 Months",
       description: "One-on-one mentorship with seasoned professionals for serious traders ready to go pro.",
       features: [
@@ -79,7 +79,10 @@ const Courses = () => {
     "Trading Psychology",
     "Fundamental Analysis",
     "Money Management",
-    "Trading Plan Development"
+    "Trading Plan Development",
+    "Smart Money Concepts",
+    "Live Trading Sessions",
+    "Backtesting & Strategy Optimization",
   ];
 
   return (

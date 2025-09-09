@@ -10,7 +10,7 @@ const Testimonials = () => {
       location: "Lagos, Nigeria",
       content: "VFDN transformed my understanding of forex trading. From a complete beginner to making consistent profits in just 3 months. The mentorship program is unmatched!",
       rating: 5,
-      profit: "+$15,000",
+      profit: "+$3,500",
       timeframe: "6 months"
     },
     {
@@ -19,7 +19,7 @@ const Testimonials = () => {
       location: "Abuja, Nigeria", 
       content: "The intensive training gave me the confidence to quit my 9-5 and trade full-time. The risk management strategies alone have saved me thousands.",
       rating: 5,
-      profit: "+$25,000",
+      profit: "+$5,000",
       timeframe: "8 months"
     },
     {
@@ -28,7 +28,7 @@ const Testimonials = () => {
       location: "London, UK",
       content: "Even from overseas, VFDN's online training was exceptional. The community support and daily insights helped me build a successful trading portfolio.",
       rating: 5,
-      profit: "+$12,500",
+      profit: "+$2,500",
       timeframe: "4 months"
     },
     {
@@ -37,17 +37,8 @@ const Testimonials = () => {
       location: "Port Harcourt, Nigeria",
       content: "Started with the free Telegram group and was so impressed that I enrolled in the intensive course. Best investment I've ever made for my financial future.",
       rating: 5,
-      profit: "+$8,500",
+      profit: "+$1,500",
       timeframe: "3 months"
-    },
-    {
-      name: "Fatima Alhassan",
-      role: "Business Owner",
-      location: "Kano, Nigeria",
-      content: "The mentorship program didn't just teach me to trade - it taught me to think like a professional trader. The psychology sessions were game-changers.",
-      rating: 5,
-      profit: "+$30,000",
-      timeframe: "1 year"
     },
     {
       name: "David Chen",
@@ -55,7 +46,7 @@ const Testimonials = () => {
       location: "Dubai, UAE",
       content: "VFDN's approach to forex education is refreshingly practical. Real strategies, real results. I've recommended it to all my colleagues interested in trading.",
       rating: 5,
-      profit: "+$18,000",
+      profit: "+$1,000",
       timeframe: "7 months"
     }
   ];

@@ -53,12 +53,12 @@ const Hero = () => {
             </div>
             <div className="trading-card bg-white/10 backdrop-blur-md border-white/20">
               <Users className="w-8 h-8 text-primary-glow mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white mb-1">500+</div>
+              <div className="text-2xl font-bold text-white mb-1">200+</div>
               <div className="text-white/80 text-sm">Students Trained</div>
             </div>
             <div className="trading-card bg-white/10 backdrop-blur-md border-white/20">
               <Star className="w-8 h-8 text-gold mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white mb-1">4.9/5</div>
+              <div className="text-2xl font-bold text-white mb-1">4.4/5</div>
               <div className="text-white/80 text-sm">Student Rating</div>
             </div>
           </div>
